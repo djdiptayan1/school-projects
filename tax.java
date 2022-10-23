@@ -144,12 +144,11 @@ class tax {
 
                 gross = sal + hra + lta + allo + other;
 
-                if (rent.equalsIgnoreCase("yes")) {
+                if (rent.equalsIgnoreCase("yes")) 
                     deduction = ppf + funds + health + interest + lta + hra + 50000;
-                }
-                if (rent.equalsIgnoreCase("no")) {
+                if (rent.equalsIgnoreCase("no")) 
                     deduction = ppf + funds + health + interest + lta + 50000;
-                }
+
                 netincome = gross - deduction;
                 System.out.println("NET INCOME WHICH WILL BE TAXED\t=" + netincome);
                 System.out.println("*******************************************************");
