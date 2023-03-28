@@ -6,8 +6,9 @@ class tax {
     double tax, netincome, sur, cess = 0.0;
     String rent, gender, year, payer, dd80 = "";
     Scanner sc = new Scanner(System.in);
+
     public void input() {
-        
+
         System.out.println("\t\t WELCOME TO INCOME TAX RETURN FILE");
         System.out.println("\t\t*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
         System.out.println("Enter the following details to proceed---+");
@@ -144,9 +145,9 @@ class tax {
 
                 gross = sal + hra + lta + allo + other;
 
-                if (rent.equalsIgnoreCase("yes")) 
+                if (rent.equalsIgnoreCase("yes"))
                     deduction = ppf + funds + health + interest + lta + hra + 50000;
-                if (rent.equalsIgnoreCase("no")) 
+                if (rent.equalsIgnoreCase("no"))
                     deduction = ppf + funds + health + interest + lta + 50000;
 
                 netincome = gross - deduction;

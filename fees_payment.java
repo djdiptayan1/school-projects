@@ -4,15 +4,17 @@ import java.util.*;
 
 class fees_payment// class start
 {
-    String name = "", Class = "", month = "", extracuri = "", advance = "", trans = "", april = "", stream = "",com = "";
+    String name = "", Class = "", month = "", extracuri = "", advance = "", trans = "", april = "", stream = "",
+            com = "";
     int roll = 0, bus = 0, busf = 0, optional = 0, registration = 0;
     char section = ' ';
     int af = 0, tf = 0, cf = 0, labf = 0, la = 0, total = 0, day = 0, date = 0, n = 1;
     int mf = 0;
-    Scanner in = new Scanner(System.in);
+    Scanner in = new Scanner(System.in); // scanner
     Calendar c = Calendar.getInstance();
+
     public void input() {
-        
+
         System.out.println("                                               *::ST.PAUL'S ACADEMY::*");
         System.out.println("                                            WELCOME TO FEES PAYMENT SYSTEM\n");
         System.out.println("                                     Please Enter The Following Details To Proceed");
@@ -24,7 +26,7 @@ class fees_payment// class start
         registration = in.nextInt();
         System.out.print("CLASS                                           : ");
         Class = in.next();
-        if (Class.equals("11") || Class.equals("12")) {
+        if (Class.equalsIgnoreCase("11") || Class.equalsIgnoreCase("12")) {
             System.out.print("ENTER THE STREAM                                : ");
             stream = in.next();
             System.out.print("2ND LANGUAGE OR COMPUTER                        : ");
@@ -56,7 +58,7 @@ class fees_payment// class start
     }
 
     // fees structure display
-    public void fee_display(){
+    public void fee_display() {
         System.out.println("                         |--------------------------------------------------------------|");
         System.out.println("                         |                        ----------------------                |");
         System.out.println("                         |------------------------|                     |---------------|");
@@ -71,16 +73,26 @@ class fees_payment// class start
         System.out.println("                         | Computer fees(I - X)                            : rs 100/-   |");
         System.out.println("                         |                                                              |");
         System.out.println("                         |    TRANSPORT FEES                                            |");
-        System.out.println("                         |    --------------                                            |\n");
-        System.out.println("                         | (bus 1-4)Ulhas/Joteram/Gangpur                                       : rs 500/- |");
-        System.out.println("                         | (bus 5-8)Burdwan Town/DM Bungalow/Kalna Gate/Saktigarh/Barshul       : rs 600/- |");
-        System.out.println("                         |                                                              |------------------|");
-        System.out.println("                         | (bus 9-12)Rasulpur/Agricultural farm/Raipur                          : rs 700/- |");
-        System.out.println("                         | (bus 13-16)Kalanabagram/Bishupur                                     : rs 750/- |");
-        System.out.println("                         | (bus 17-20)Memari/Palla Road/Atagarh/Kashira Polempur to Sehera bazar: rs 800/- |");
-        System.out.println("                         | (bus 21-24)Magalmari More/Palsit/Putunda/Renaissance                 : rs 1000/-|");
-        System.out.println("                         | (bus 25-28)Boinchee                                                  : rs 1200/-|");
-        System.out.println("                         |                                                              |------------------|");
+        System.out
+                .println("                         |    --------------                                            |\n");
+        System.out.println(
+                "                         | (bus 1-4)Ulhas/Joteram/Gangpur                                       : rs 500/- |");
+        System.out.println(
+                "                         | (bus 5-8)Burdwan Town/DM Bungalow/Kalna Gate/Saktigarh/Barshul       : rs 600/- |");
+        System.out.println(
+                "                         |                                                              |------------------|");
+        System.out.println(
+                "                         | (bus 9-12)Rasulpur/Agricultural farm/Raipur                          : rs 700/- |");
+        System.out.println(
+                "                         | (bus 13-16)Kalanabagram/Bishupur                                     : rs 750/- |");
+        System.out.println(
+                "                         | (bus 17-20)Memari/Palla Road/Atagarh/Kashira Polempur to Sehera bazar: rs 800/- |");
+        System.out.println(
+                "                         | (bus 21-24)Magalmari More/Palsit/Putunda/Renaissance                 : rs 1000/-|");
+        System.out.println(
+                "                         | (bus 25-28)Boinchee                                                  : rs 1200/-|");
+        System.out.println(
+                "                         |                                                              |------------------|");
         System.out.println("                         |    OPTIONAL                                                  |");
         System.out.println("                         |    --------                                                  |");
         System.out.println("                         |                                                              |");
